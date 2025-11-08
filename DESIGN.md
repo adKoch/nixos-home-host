@@ -23,6 +23,11 @@ Bootable NixOS configuration for a home miniPC serving as an always-on server ru
 - Peer-to-peer architecture with no central server
 - Automatic conflict resolution and versioning
 
+### Samba
+- Network file sharing via SMB/CIFS protocol
+- Cross-platform compatibility (Windows, macOS, Linux, mobile)
+- User authentication and share-level permissions
+
 ## Architecture
 
 ### Container Strategy
@@ -51,6 +56,7 @@ nixos-home-host/
 ├── configuration.nix      # Main NixOS configuration
 ├── services/
 │   ├── audiobookshelf.nix # Audiobookshelf service config
-│   └── syncthing.nix      # Syncthing service config
+│   ├── syncthing.nix      # Syncthing service config
+│   └── samba.nix          # Samba service config
 └── hardware-configuration.nix
 ```
