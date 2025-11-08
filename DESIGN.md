@@ -18,10 +18,10 @@ Bootable NixOS configuration for a home miniPC serving as an always-on server ru
 - Web interface for streaming and management
 - Metadata management and library organization
 
-### Joplin Server
-- Note synchronization server for Joplin clients
-- Enables cross-device note syncing
-- Lightweight and efficient
+### Syncthing
+- Continuous file synchronization across devices
+- Peer-to-peer architecture with no central server
+- Automatic conflict resolution and versioning
 
 ## Architecture
 
@@ -51,6 +51,6 @@ nixos-home-host/
 ├── configuration.nix      # Main NixOS configuration
 ├── services/
 │   ├── audiobookshelf.nix # Audiobookshelf service config
-│   └── joplin.nix         # Joplin server service config
+│   └── syncthing.nix      # Syncthing service config
 └── hardware-configuration.nix
 ```
